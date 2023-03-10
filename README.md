@@ -1,16 +1,29 @@
 # immagineottica
 
-Immagine Ottica App
+Client per visualizzare i propri punti della Tessera Lac
 
-## Getting Started
+## Caso d'uso principale
 
-This project is a starting point for a Flutter application.
+- Registrare un nuovo utente. (La creazione della tesseraLac collegata all'utente è da eseguire manualmente
+  con la app di backoffice)
+- Visualizzare i punti della propria tesseraLac
+- Visualizzare una pagina di benvenuto con gli ultimi occhiali
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Note per sviluppatori
+- Per far funzionare la web app è stato modificata la riga di /web/index.html <base href="$FLUTTER_BASE_HREF">
+  con <base href="/webapp/">. Vedi commenti del file per modificare in caso di cambio server.
+- Spunto per app ottimizzata : https://github.com/flutter/gallery/
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Prossimi passi:
+- Scrivere test per comunicazione con database.
+
+### Bug:
+
+### Da fare:
+- Su TesseraLac
+    - Inserire la foto della tessera Lac
+- Pubblicare app android su play store
+    - https://docs.flutter.dev/deployment/android
+
+
