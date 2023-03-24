@@ -10,7 +10,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
   if(!kIsWeb){
     final statoConnessione = await (Connectivity().checkConnectivity());
-    if (statoConnessione != ConnectivityResult.mobile ||
+    if (statoConnessione != ConnectivityResult.mobile &&
   statoConnessione != ConnectivityResult.wifi){
       //todo: potrei provare una chiamata http per testare la conessione
       runApp(const NoConnessioneApp());
